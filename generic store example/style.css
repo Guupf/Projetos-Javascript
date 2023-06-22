@@ -1,0 +1,323 @@
+* {
+  font-family: "Market Sans", Arial, sans-serif
+}
+
+body {
+  background-image:linear-gradient(to right,rgb(170, 216, 152), rgb(210, 238, 214));
+}
+
+header {
+  display: flex;
+  background-color: rgb(19, 25,33);
+  width: auto;
+  height:99px;
+}
+
+#storeNameDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.storeName {
+  margin-right: 10px;
+}
+
+h1.storeName {
+  color: white;
+  text-align: left;
+}
+
+.storeImage {
+  max-height: 100%
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+#navSearch .navLeft .textBox {
+  width: 43px;
+  height: 43px;
+}
+
+.navLeft {
+  position: relative;
+  width: 43px;
+  height: 43px;
+}
+
+.navLeft input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.optionsNavLeft {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: none;
+}
+
+.navLeft input:focus + .optionsNavLeft {
+  display: block;
+}
+
+.optionsNavLeft li {
+  display: block;
+  margin: 5px;
+}
+
+.dropdownContent {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: none;
+  width: 100%;
+}
+
+.navLeft:hover .dropdownContent {
+  display: block;
+}
+
+.dropdownButton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#shoppingCart {
+  padding-left: 300px;
+}
+
+#Carrinho {
+  font-size: 18px;
+}
+
+#navSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navSearchBarForm {
+  display: flex;
+}
+
+input#inputNavSearchField {
+  width: 800px;
+  height: 43px;
+  line-height: 43px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+#buttonSearchFieldConfirm {
+  background-color: antiquewhite;
+  height:43px;
+  width: 43px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#buttonSearchFieldConfirm img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navFill {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #0F1111
+}
+
+#johnnyCashItems {
+  width: 299px;
+  height: 420px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#imagesJC {
+  max-width: 85%;
+  max-height: 85%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+span {
+  font-size: 15px;
+  color: #0F1111;
+}
+
+span#logIn,
+a {
+  color:white;
+}
+
+section#mainSection {
+  padding-top: 66px;
+  display: flex;
+  justify-content: space-between;
+  width: 1297px;
+  margin: 0 auto;
+}
+
+#objectsMain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.h1BannerTextTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0103a;
+  color: white;
+  width: 30%;
+  height: 330px;
+}
+
+#buttonBannerTop {
+  width: 224px;
+  height: 48px;
+}
+
+.h1BannerTextTop h2,
+.h1BannerTextTop span{
+  margin: 10px;
+  text-align: left;
+  color: white;
+  white-space: nowrap;
+}
+
+.h1BannerTextTop h2 {
+   font-size: 2.25rem;
+   white-space: nowrap;
+}
+
+.h1BannerTextTop h2 span {
+  display: block;
+  font-size: 2.25rem;
+}
+
+.h1BannerTextTop span {
+  font-size: 0.75rem;
+}
+
+button#buttonBannerTop {
+  background-color: #e0103a;
+  border-color: white;
+  border-width: 1px;
+  transition: background-color 0.2s ease;
+}
+
+#buttonBannerTop span {
+  color: white;
+  font-size: 25px;
+}
+
+.BannerImageTop {
+  flex-grow: 1;
+  height:330px;
+}
+
+.BannerImageTop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blockBannerContainerTop {
+  padding-top: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  height: 330px;
+  padding-bottom: 100px;
+}
+
+#buttonBannerTop:hover {
+  background-color: white;
+}
+
+#buttonBannerTop:hover span {
+  color: red;
+}
+
+div.footerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(19, 25,33);
+}
+
+div#a-list,
+div#reference {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+
+div#a-list a,
+div#reference a {
+  color: white;
+  margin-bottom: 10px;
+}
+
+div#a-list {
+  margin-right: 200px;
+}
+
+div#reference {
+  margin-left: 200px;
+}
+
+.objectNo1of4sBtn,
+.objectNo2of4sBtn,
+.objectNo3of4sBtn,
+.objectNo4of4sBtn {
+  width: 128px;
+  height: 128px;
+  border: none;
+  cursor:pointer;
+  background-color: transparent;
+}
